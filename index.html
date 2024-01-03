@@ -64,10 +64,33 @@
                 </li>
               </ul>
               <div class="user_option">
-                <a href="">
+                <a href="#userModel" data-toggle="modal" data-target="#userModel"> 
                   <img src="images/user.png" alt="">
                 </a>
+                <div class="modal fade" id="userModel" tabindex="-1" role="dialog" aria-labelledby="userModel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: black; align-items: center;">Login</h5>
+                       
+                      </div>
+                      <div class="modal-body">
+                        <div class="container">
+                          <label for="uname"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                        </div>    
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Login</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
                 </form>
               </div>
@@ -102,11 +125,29 @@
                       <p>
                         Your day care service where your dog feels at home
                       </p>
-                      <div class="">
-                        <a href="">
+                      <div class="" >
+                        <a href="#registrationModal" data-toggle="modal" data-target="#registrationModal"">
                           Apply Here
                         </a>
                       </div>
+                      <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModal"" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel" style="color: black; align-items: center;">Daycare Registration Form</h5>
+                             
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Save</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
                     </div>
                   </div>
                 </div>
