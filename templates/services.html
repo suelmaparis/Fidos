@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+{% extends 'base.html' %}
+
+{% block title %}Home - DogHotel{% endblock %}
+
+{% block content %}
+<body class="sub_page">
+  <div class="hero_area">
+  
+  </div>
+
+  <!-- do section -->
+
+  <section class="do_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Service
+        </h2>
+        <p>
+          At Dog Hotel, we believe a tired pup is a happy pup. When you bring your pet we’ll help you set up a personalized schedule for your dog.
+        </p>
+      </div>
+      <div class="do_container">
+        <div class="box arrow-start arrow_bg">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/d-1.png') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Daycare
+            </h6>
+          </div>
+        </div>
+        <div class="box arrow-middle arrow_bg">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/d-2.png') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Dog Boarding
+            </h6>
+          </div>
+        </div>
+        <div class="box arrow-middle arrow_bg">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/d-3.png') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Home Pick Up
+            </h6>
+          </div>
+        </div>
+        <div class="box arrow-end arrow_bg">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/d-5.png') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Home Drop off
+            </h6>
+          </div>
+        </div>
+        <div class="box ">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/d-4.png') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Cat Boarding
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end do section -->
+  <!-- price section -->
+  <section class="price_section"> 
+    <div class="container">
+
+    </div>
+
+  </section>
+  <!-- End price section-->
+  <!-- Boarding Registration section-->
+    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" style="align-self: center;">
+        Boarding Sheet
+      </button>
+
+      <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black; align-items: center;"> Boarding Sheet</h5>
+                
+              </div>
+              <div class="modal-body">
+              <form action="">
+                <span>Cat </span><input type="checkbox"> Or <span> Dog</span><input type="checkbox"> </p>
+                <p><span>First & Last Name</span>
+                <input type="text"></p> 
+                <p><span>Dates of states</span>
+                <input type="date"> to <input type="date"> </p>
+                <p><span>Brought Own Food</span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox"> </p>
+                <p><span>Food Brand Name & How many prepared portions</span>
+                <input type="number"></p> 
+                <p><span>Eating House Food</span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox"> </p>
+                <p><span>How Many Cups Per Meals</span>
+                <input type="number"></p> 
+                <P>--------Medications---------</P>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox"> </p>
+                <span>Morning </span><input type="checkbox"> Or <span> Afternoon</span><input type="checkbox"> </p>
+                <P>--------Belongings---------</P>
+                <p><span>Collar/Harness</span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox"> <span>Color</span> <input type="color"></p>
+                <p><span><Leash/span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox">  <span>Color</span><input type="color"></p>
+                <p><span>Bed</span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox">  <span>Color</span><input type="color"></p>
+                <p><span>Toys</span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox">  <span>Color</span> <input type="color"><span> How Many</span><input type="number"></p>
+                <p><span>Other Possessons</span>
+                <span>Yes</span><input type="checkbox"> <span>No</span><input type="checkbox"> <span>Describe</span><input type="text"></p>
+                <p><span>Any Special Instructions From Parent</span>
+                <textarea></textarea></p>
+              </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- End  Boarding Registration section-->
+ 
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+{% endblock %}
+</html>
